@@ -1,0 +1,240 @@
+<html>
+    <head>
+        <title></title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="CSS/log2.css">
+        <link rel="stylesheet" href="CSS/home.css">
+        <link rel="stylesheet" href="CSS/hom2.css">
+        <link rel="stylesheet" href="CSS/reg.css">
+    </head>
+  <body>
+    <div class="header1">
+       
+       <img src="images/logo2.png" alt="logo" width="200" height="128"/> <h1>FarmDestiny</h1>
+    </div>
+    <div class="topnav">
+      <a href="Logins.html" >Home</a>
+      <a href="#">About Us</a>
+      <a class="button" href="Logins.html" style="float:right">Login</a>
+  </div>
+  <button onclick="FarmerFunction()" class="btn btn-success">Farmer</button>
+  <button onclick="DealerFunction()" class="btn btn-success">Dealer</button>
+  <div class="reg" id="myDIV">
+ <h2>Farmer</h2>
+<table align="center" cellpadding = "10">
+ <form action="fregister.jsp" method="get">
+<!----- First Name ---------------------------------------------------------->
+<tr>
+<td>FULL NAME</td>
+<td><input type="text" name="fname" maxlength="30"/>
+</td>
+</tr>
+<td>USERNAME</td>
+<td><input type="text" name="uname" maxlength="30"/>
+</td>
+</tr>
+ <td>PASSWORD</td>
+<td><input type="text" name="password" maxlength="30"/>
+</td>
+</tr>
+
+ 
+
+<!----- Email Id ---------------------------------------------------------->
+<tr>
+<td>EMAIL ID</td>
+<td><input type="text" name="email" maxlength="100" /></td>
+</tr>
+ 
+<!----- Mobile Number ---------------------------------------------------------->
+<tr>
+<td>MOBILE NUMBER</td>
+<td>
+<input type="text" name="mno" maxlength="10" />
+(10 digit number)
+</td>
+</tr>
+ 
+<!----- Gender ----------------------------------------------------------->
+<tr>
+<td>GENDER</td>
+<td>
+Male <input type="radio" name="gender" value="Male" />
+Female <input type="radio" name="gender" value="Female" />
+</td>
+</tr>
+ 
+<!----- Address ---------------------------------------------------------->
+<tr>
+<td>ADDRESS <br /><br /><br /></td>
+<td><textarea name="address" rows="4" cols="30"></textarea></td>
+</tr>
+ 
+<!----- City ---------------------------------------------------------->
+<tr>
+<td>CITY</td>
+<td><input type="text" name="city" maxlength="30" />
+</td>
+</tr>
+ 
+<!----- Pin Code ---------------------------------------------------------->
+<tr>
+<td>PIN CODE</td>
+<td><input type="text" name="pincode" maxlength="6" />
+(6 digit number)
+</td>
+</tr>
+ 
+<!----- State ---------------------------------------------------------->
+<tr>
+<td>STATE</td>
+<td><input type="text" name="state" maxlength="30" />
+</td>
+</tr>
+ 
+<!----- Country ---------------------------------------------------------->
+<tr>
+<td>COUNTRY</td>
+<td><input type="text" name="country" value="India" readonly="readonly" /></td>
+</tr>
+ 
+<!----- Hobbies ---------------------------------------------------------->
+
+ 
+
+ 
+<!----- Submit and Reset ------------------------------------------------->
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</td>
+</tr>
+</table>
+ 
+</form>
+</div>
+<div class="reg" id="myDIV1">
+ <h2>Dealer</h2>
+<table align="center" cellpadding = "10">
+ <form action="dregister.jsp" method="get">
+<!----- First Name ---------------------------------------------------------->
+<tr>
+<td>FULL NAME</td>
+<td><input type="text" name="fname" maxlength="30"/>
+</td>
+</tr>
+<td>USERNAME</td>
+<td><input type="text" name="uname" maxlength="30"/>
+</td>
+</tr>
+ <td>PASSWORD</td>
+<td><input type="text" name="password" maxlength="30"/>
+</td>
+</tr>
+
+ 
+
+<!----- Email Id ---------------------------------------------------------->
+<tr>
+<td>EMAIL ID</td>
+<td><input type="text" name="email" maxlength="100" /></td>
+</tr>
+ 
+<!----- Mobile Number ---------------------------------------------------------->
+<tr>
+<td>MOBILE NUMBER</td>
+<td>
+<input type="text" name="mno" maxlength="10" />
+(10 digit number)
+</td>
+</tr>
+ 
+<!----- Gender ----------------------------------------------------------->
+<tr>
+<td>GENDER</td>
+<td>
+Male <input type="radio" name="gender" value="Male" />
+Female <input type="radio" name="gender" value="Female" />
+</td>
+</tr>
+ 
+<!----- Address ---------------------------------------------------------->
+<tr>
+<td>ADDRESS <br /><br /><br /></td>
+<td><textarea name="address" rows="4" cols="30"></textarea></td>
+</tr>
+ 
+<!----- City ---------------------------------------------------------->
+<tr>
+<td>CITY</td>
+<td><input type="text" name="city" maxlength="30" />
+</td>
+</tr>
+ 
+<!----- Pin Code ---------------------------------------------------------->
+<tr>
+<td>PIN CODE</td>
+<td><input type="text" name="pincode" maxlength="6" />
+(6 digit number)
+</td>
+</tr>
+ 
+<!----- State ---------------------------------------------------------->
+<tr>
+<td>STATE</td>
+<td><input type="text" name="state" maxlength="30" />
+</td>
+</tr>
+ 
+<!----- Country ---------------------------------------------------------->
+<tr>
+<td>COUNTRY</td>
+<td><input type="text" name="country" value="India" readonly="readonly" /></td>
+</tr>
+ 
+<!----- Hobbies ---------------------------------------------------------->
+
+ 
+
+ 
+<!----- Submit and Reset ------------------------------------------------->
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</td>
+</tr>
+</table>
+ 
+</form>
+</div>
+ <script>
+      $("#myDIV").hide();
+      $("#myDIV1").hide();
+     function FarmerFunction() {
+        $("#myDIV1").hide();
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function DealerFunction() {
+    $("#myDIV").hide();
+  var x = document.getElementById("myDIV1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+ </script>
+ 
+</body>
+</html>
